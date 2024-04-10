@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /aconcli
+    schedule:
+      interval: daily
+
+  - package-ecosystem: cargo
+    directory: /acond
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /samples/quote/client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /samples/quote/server
+    schedule:
+      interval: daily
